@@ -1,7 +1,10 @@
-<form class="form-inline">
-  <div class="form-group">
-    <input type="search" class="form-control" placeholder="Username/Repository"#search>
-    <button class="btn btn-primary"(click)="doSearch(search.value)">Username</button>
-    <button class="btn btn-primary"(click)="doSearch(search.value)">Repository</button>
-  </div>  
-</form>
+<div class='search'>
+  <h5>GitHub-Search</h5>
+  <form class="form-inline">
+    <div class="form-group">
+      <input type="search" class="form-control" placeholder="Username/Repository"#search>
+      <button class="btn btn-link"(click)="userSearch(search.value)">Username</button>
+      <button class="btn btn-link"(click)="repoSearch(search.value)">Repository</button>
+    </div>  
+  </form>
+</div>

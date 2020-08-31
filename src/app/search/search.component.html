@@ -1,8 +1,12 @@
 <div class='search'>
   <h4 id='text'>GitHub-Search</h4>
+  <p>Connecting the software development world</p>
   <form class="form-inline">
     <div class="form-group">
       <input type="search" class="form-control" placeholder="Username/Repository"#search>
+      <div class= "home">
+        <button class="bbtn btn-info" routerLink="home"  routerLinkActive='active'>Home</button>
+      </div>
       <div class= "user">
         <button class="bbtn btn-info"(click)="getUsers(search.value)" routerLink="user"  routerLinkActive='active'>Username</button>
       </div>

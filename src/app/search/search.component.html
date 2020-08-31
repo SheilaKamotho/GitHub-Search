@@ -3,8 +3,12 @@
   <form class="form-inline">
     <div class="form-group">
       <input type="search" class="form-control" placeholder="Username/Repository"#search>
-      <button class="btn btn-link"(click)="userSearch(search.value)" routerLink="user"  routerLinkActive='active'>Username</button>
-      <button class="btn btn-link"(click)="repoSearch(search.value)"routerLink="repo"  routerLinkActive='active'>Repository</button>
+      <div class= "user">
+        <button class="bbtn btn-info"(click)="userSearch(search.value)" routerLink="user"  routerLinkActive='active'>Username</button>
+      </div>
+      <div class= "repo">
+        <button class="bbtn btn-info"(click)="repoSearch(search.value)"routerLink="repo"  routerLinkActive='active'>Repository</button>
+      </div>
     </div>  
   </form>
 </div>

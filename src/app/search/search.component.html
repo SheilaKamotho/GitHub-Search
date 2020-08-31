@@ -4,11 +4,12 @@
     <div class="form-group">
       <input type="search" class="form-control" placeholder="Username/Repository"#search>
       <div class= "user">
-        <button class="bbtn btn-info"(click)="userSearch(search.value)" routerLink="user"  routerLinkActive='active'>Username</button>
+        <button class="bbtn btn-info"(click)="getUsers(search.value)" routerLink="user"  routerLinkActive='active'>Username</button>
       </div>
       <div class= "repo">
-        <button class="bbtn btn-info"(click)="repoSearch(search.value)"routerLink="repo"  routerLinkActive='active'>Repository</button>
+        <button class="bbtn btn-info"(click)="getRepos(search.value)"routerLink="repo"  routerLinkActive='active'>Repository</button>
       </div>
     </div>  
   </form>
 </div>
+

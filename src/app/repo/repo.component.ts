@@ -8,7 +8,7 @@ import { UserService } from '../user-service/user.service'
 })
 export class RepoComponent implements OnInit {
   reposItems: any[];
-  reposName: string='Githubsearch';
+  reposName: string='Web Portfolio';
   constructor(private userService:UserService) {
 
   }

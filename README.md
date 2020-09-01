@@ -1,5 +1,28 @@
-# GitHubSearch
+# GitHub-Search
 
+## Description
+This is a web application made for software developers to search for GitHub Users and Repostories easily. It also displays for how long users have been using GitHub, some of their bio information and brief descriptions of searched repositories. Users can also go to github to view the code and more details.
+
+## Set Up Instructions
+The GitSearch web application can be opened on any browser using the link below.
+
+## Live Link
+https://sheilakamotho.github.io/GitHub-Search/
+
+## Copy right and Licence information
+*{MIT License Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.}* Copyright (c) {2020} {Sheila Kamotho}
+
+## Author-Name
+Sheila Kamotho
+
+## Contact Details 
+kamothosheila@gmail.com
+
+## Technologies Used
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 ## Development server

@@ -1,33 +1,39 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { map } from 'rxjs/operators';
 
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class UserService {
-  private username: string;
-  private clientid = 'dc4cbc3dcccd8cfa4ec7';
-  private clientsecret = '5dfa88d45fa23b6c7ee535af8844baccfd42e61d';
-  private apikey: string = '2acdeec577f9c9bdce8b7dde1cbf27e1b5134f14'
+  userName: string;
+  repoName: string;
+  clientId: string= 'dc4cbc3dcccd8cfa4ec7';
+  clientSecret: string = '5dfa88d45fa23b6c7ee535af8844baccfd42e61d';
+  apikey: string = '2acdeec577f9c9bdce8b7dde1cbf27e1b5134f14'
 
-  constructor(private http:HttpClient){
+  constructor(private http: HttpClient) {
     console.log('service is now ready');
-    this.username = 'sheilakamotho'
-  }
-  getProfileInfo(){
-  	return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
-    .pipe(map((response: any) => response.json()));
-  }
 
+   }
+   getProfileInfo(){
+    return this.http.get("https://api.github.com/users/" + this.userName + "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret);
+  
+  }
   getProfileRepos(){
-  	return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
-  	.pipe(map((response: any) => response.json()));
+    return this.http.get("https://api.github.com/users/" + this.userName + "/repos?client_id=" + this.clientId + "&client_secret=" + this.clientSecret);
   }
-
- updateProfile(username:string){
-  	this.username = username;
+  searchrepos() {
+    return this.http.get('https://api.github.com/search/repositories?q=' + this.repoName, ({
+      headers: new HttpHeaders({Authorization: `token ${this.apikey}`})
+    }))
+  }
+  updateProfile(userName:string){
+    this.userName =userName
+  }
+  UpdateRepo(repoName:string) {
+    this.repoName = repoName;
   }
 
 }

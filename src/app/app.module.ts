@@ -10,7 +10,8 @@ import { RepoComponent } from './repo/repo.component';
 import { HomeComponent } from './home/home.component';
 import { UserService } from './user-service/user.service';
 import { HttpClientModule } from '@angular/common/http';
-import { DateCountPipe } from './date-count.pipe'
+import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DateCountPipe } from './date-count.pipe'
     UserComponent,
     RepoComponent,
     HomeComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirective
   
   ],
   imports: [

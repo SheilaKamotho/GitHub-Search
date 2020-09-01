@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: 'user', component: UserComponent},
   { path: 'repos', component: RepoComponent},
   { path: 'home', component: HomeComponent},
+
+  { path: '', redirectTo:"/home", pathMatch:"full"},
   
 
 ];

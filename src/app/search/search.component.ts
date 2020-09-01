@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserService } from '../user-service/user.service'
 
 
 @Component({
@@ -10,13 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
  
-  getUsers(term:string) {
-  }
-  getRepos(term:string) {
-  }
-  constructor() {}
+  profile: any[];
+  repos: any[];
+  username: string;
+  
+  constructor(private userService: UserService) { 
 
-  ngOnInit(): void {
+  }
+    findProfile(){
+      this.userService.updateProfile(this.username);
+      this.userService.getProfileInfo().subscribe(profile => {
+        console.log(profile);
+        this.profile = profile;
+      });
+  
+      this.userService.getProfileRepos().subscribe(repos => {
+        console.log(repos);
+        this.repos = repos;
+      })  	
+    }
+    findRepos(){}
+  ngOnInit(): void{
   }
 
 }

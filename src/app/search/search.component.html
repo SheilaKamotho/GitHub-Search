@@ -1,17 +1,9 @@
-<div class='search'>
-  <form class="form-inline">
-    <div class="form-group">
-      <input type="search" class="form-control" placeholder="Username/Repository"#search>
-      <div class= "home">
-        <button class="bbtn btn-info" routerLink="home"  routerLinkActive='active'>Home</button>
-      </div>
-      <div class= "user">
-        <button class="bbtn btn-info"(click)="getUsers(search.value)" routerLink="user"  routerLinkActive='active'>Username</button>
-      </div>
-      <div class= "repo">
-        <button class="bbtn btn-info"(click)="getRepos(search.value)"routerLink="repo"  routerLinkActive='active'>Repository</button>
-      </div>
-    </div>  
-  </form>
-</div>
+<div class="navbar navbar-dark bg-dark">
+  <div>
+    <h2 class="search">Github Search</h2>
+  </div>
 
+      <a class="nav-item nav-link active btn btn-info" routerLink="profile"  routerLinkActive='active'>Search Users<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link btn btn-info" routerLink="/repos"  routerLinkActive='active'> Search Repos</a>
+
+</div>
